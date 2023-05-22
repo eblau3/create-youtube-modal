@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="js-modal-open" data-name="modal">OPEN</button>
+  <button class="js-modal-open" data-name="modal2">OPEN2</button>
+  <button class="js-modal-open" data-name="modal3">OPEN3</button>
+
+  <script>
+    const modalProps = [
+      {
+        name: "modal",
+        title: "タイトル",
+        description: "概要テキスト",
+        ytid: "orWFnPIThxQ"
+      },
+      {
+        name: "modal2",
+        title: "タイトル2",
+        description: "概要テキスト2",
+        ytid: "eM2IXmfFWEM"
+      },
+      {
+        name: "modal3",
+        title: "タイトル3",
+        description: "概要テキスト3",
+        ytid: "zaL2jDmDIMc"
+      }
+    ];
+    const modalPropsJsonData = JSON.stringify(modalProps, null, 2);
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
